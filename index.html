@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="wrapper">
+    <header class="header">
+      <div class="header-top py-1">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 col-sm-4">
+              <div class="header-top-phone d-flex align-items-center h-100">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+79782684614" class="ms-2">+8(800)555-35-35</a>
+              </div>
+            </div>
+            <div class="col-sm-4 d-none d-sm-block">
+              <ul class="social-icons d-flex justify-content-center">
+                <li><a href="#" target="_blank"><i class="fa-brands fa-vk text-light"></i></a></li>
+                <li><a href="https://github.com/KellMinorniy?tab=repositories" target="_blank"><i
+                  class="fa-brands fa-github text-light"></i></a></li>
+                <li><a href="#" target="_blank"><i class="fa-brands fa-telegram text-light"></i></a></li>
+              </ul>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="header-top-account d-flex justify-content-end">
+                <div class="btn-group me-2">
+                  <div class="dropdown">
+                    <a class="btn btn-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Account
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="sign-in.html">Sign In</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="sign-up.html">Sign Up</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="btn-group">
+                  <div class="dropdown">
+                    <a class="btn btn-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      EN
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Ru</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Ua</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <!-- Header-top -->
+
+      <div class="header-middle bg-white py-4">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <a href="/index.html" class="header-logo h1">BS-Shop</a>
+            </div>
+
+            <div class="col-md-4">
+              <form action="">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="button-search">
+                  <button class="btn btn-outline-warning" type="submit" id="button-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-md-4 cart-buttons text-end">
+              <a href="#" class="btn">
+                <i class="fa-solid fa-heart"></i>
+                <span class="badge text-bg-warning cart-badge bg-warning">5</span>
+              </a>
+
+              <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="badge text-bg-warning cart-badge bg-warning">3</span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasCartLabel">Cart</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    This contains all the items you have added to your shopping cart
+                  </div>
+                  <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                      Category
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Cloth</a></li>
+                      <li><a class="dropdown-item" href="#">Household products</a></li>
+                      <li><a class="dropdown-item" href="#">More</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header-middle -->
+
+      <!-- Header-low -->
+    </header>
+    <div class="header-bottom sticky-top">
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcancasNavbar" aria-controls="#offcancasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start w-50"  id="offcancasNavbar" tabindex="-1"  aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-body">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Payment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Delivery</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  Catalog
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Shoes</a></li>
+                  <li><a class="dropdown-item" href="#">Jeans</a></li>
+
+                  <li class="nav-item dropend">
+                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                      Household products
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li>
+                        <a href="#" class="dropdown-item">Dishes</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Furniture</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Other</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <li><a class="dropdown-item" href="#">Coat</a></li>
+                </ul>
+              </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <main class="main">
+      <div class="container-fluid m-3">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor quisquam odit, minima modi praesentium exercitationem excepturi sapiente ea harum quas. Ipsam possimus reprehenderit ducimus, et praesentium hic quaerat minus placeat?</p>
+        <p>Dicta necessitatibus similique qui a nemo in recusandae, cumque sunt nam adipisci sed delectus, non iste corporis labore veniam? Cum voluptate quisquam asperiores dolorem dolores, optio enim corporis id tempora?</p>
+        <p>Quod nemo, et dolores libero fuga ab atque at in quia! Sapiente inventore quae molestiae natus laborum nesciunt, cupiditate reprehenderit! Dolores perspiciatis, minima illum amet natus rem cupiditate eveniet error?</p>
+        <p>Tenetur, perspiciatis inventore, adipisci, dolorum quidem sed neque sint officiis rerum ea ipsam aliquam expedita rem eaque? Omnis doloribus, placeat, laborum dolores dolorum suscipit quas pariatur, cupiditate voluptatem quasi beatae.</p>
+        <p>Sit tempore ipsa ducimus in sapiente veritatis cupiditate ullam nemo pariatur commodi minima, a facilis vel iste magni molestiae. Nulla quis doloribus qui praesentium dolore eius non repellendus asperiores dolorem!</p>
+        <p>Provident aliquam ipsum dolor consequatur in! Autem excepturi laborum neque ducimus odio rerum, obcaecati modi enim aliquid unde ipsam quod quibusdam distinctio rem vero voluptates, minima aut maxime aliquam quia!</p>
+        <p>Sed quo ex optio, aspernatur atque vitae ullam adipisci ducimus sint quam consequatur similique corporis, laboriosam nam non ad quis suscipit reiciendis doloremque quos veritatis excepturi minima perferendis? Officiis, minima.</p>
+        <p>Sed reprehenderit ab debitis pariatur! Rerum, odit quae omnis earum unde numquam debitis repudiandae, sint minima, iusto quis a sit nobis ipsum voluptates maxime. Perferendis eos labore dolorem obcaecati possimus.</p>
+        <p>Vel, perspiciatis. Repellat quae, eligendi reiciendis laborum, necessitatibus cumque, esse explicabo odit excepturi magni rem? Aspernatur doloremque, perspiciatis sapiente, fugit, ipsa perferendis asperiores animi impedit fuga iure debitis excepturi voluptate.</p>
+      </div>
+  <!-- Card -->
+      <div class="row m-3">
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+          <div class="product card">
+            <div class="product-img">
+              <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgrqoQLJQjNfYr5t1nIkR5Ez-KWSdeL1VJdQ&usqp=CAU" alt="" class="w-100"></a>
+            </div>
+            <div class="product-info">
+              <h4><a href="#">Green </a></h4>
+              <p class="product-more">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, error.</p>
+              <div class="product-bottom">
+                <div class="product-price">
+                  <small>20$</small>
+                  15$
+                </div>
+                <div class="buttons p-1 d-flex justify-content-around">
+                  <button class="btn btn-danger w-40"><i class="fa-solid fa-credit-card"></i></button>
+                  <button class="btn btn-danger w-40"><i class="fa-solid fa-cart-shopping"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>                                      
+    </main>
+    <footer class="footer">
+      Footer
+    </footer>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
