@@ -8,7 +8,7 @@
 
 html, body {
   height: 100%;
-
+  width: 100%;
 }
 
 body {
@@ -16,7 +16,6 @@ body {
   font-family: 'Roboto', sans-serif !important;
   background-color: var(--bg-color);
   color: var(--text-color);
-
 }
 
 /* =================================== general ===================================  */
@@ -58,6 +57,10 @@ img {
 /* =================================== general ===================================  */
 
 /* =================================== Header ===================================  */
+
+  .logo {
+    width: 15%;
+  }
 
   .header-top-phone a{
     text-decoration: none;
@@ -139,28 +142,8 @@ img {
   }
 /* =================================== Header ===================================  */
 
-/* =================================== Content ===================================  */
+/* Footer */
 
-.product-price  {
-  font-weight: bold;
-  text-align: center;
-  font-size: large;
+.footer-logo {
+  width: 5%;
 }
-
-.product-card {
-  transition: 0.3s;
-  background-color: #fff;
-  position: relative;
-  border: 1px solid;
-}
-
-.product-img {
-  max-height: 250px;
-}
-
-.product-info {
-  text-align: center;
-}
-
-  /* Sign In */
-
