@@ -11,6 +11,7 @@ body {
   padding: 20px;
   width: 40%;
   text-align: center;
+  border-radius: 10px;
 }
 
 .form-control {
@@ -54,4 +55,9 @@ body {
   html, body {
     font-size: 10px;
   }
+}
+
+.logo {
+  width: 20%;
+  border-radius: 10px;
 }
