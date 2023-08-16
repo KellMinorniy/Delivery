@@ -140,6 +140,12 @@ img {
   .nav-link:hover {
     color: var(--accent-color) !important;
   }
+
+  /* Carousel */
+  .carousel-item {
+    height: 500px;
+    width: 100%;
+  }
 /* =================================== Header ===================================  */
 
 /* Footer */

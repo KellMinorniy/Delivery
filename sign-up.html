@@ -11,30 +11,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
   </head>
-<body class="bg-dark">
+<body>
   <!-- Вход -->
   
   <div class="container bg-dark">
-    <h1 class="text-danger">Sign In</h1>
-    <div class="mb-3">
-      <input type="text" name="" id="input" class="form-control" placeholder="Name" aria-describedby="helpId" required minlength="5" maxlength="15">
-    </div>
-    <div class="mb-3">
-      <input type="text" name="" id="input" class="form-control" placeholder="Last name" aria-describedby="helpId" required minlength="5" maxlength="15">
-    </div>
-    <div class="mb-3">
-      <input type="email" name="" id="input" class="form-control" placeholder="Gmail" aria-describedby="helpId" required minlength="5" maxlength="15">
-    </div>
-    <div class="mb-3">
-      <input type="password" name="" id="input" class="form-control" placeholder="Password" aria-describedby="helpId" required minlength="5" maxlength="15">
-    </div>
-    <div class="mb-3">
-      <input type="password" name="" id="input" class="form-control" placeholder="Password again" aria-describedby="helpId" required minlength="5" maxlength="15">
-    </div>
-    <div class="d-flex flex-column">
-      <a href="sign-up.html" class="text-secondary">Sign in</a>
-      <button class="btn btn-success" type="submit"><i class="fa-solid fa-arrow-right"></i></button>
-    </div>
+    <form action="" class="col-md-12">
+      <div class="mb-3">
+        <input type="text"
+          class="form-control" placeholder="Имя">
+      </div>
+      <div class="mb-3">
+        <input type="text"
+          class="form-control"  placeholder="Фамилия">
+      </div>
+      <div class="mb-3">
+        <input type="email"
+          class="form-control" aria-describedby="helpId" placeholder="Gmail">
+      </div>
+      <div class="mb-3">
+        <input type="password"
+          class="form-control"  placeholder="Пароль">
+      </div>
+      <div class="mb-3">
+        <input type="password"
+          class="form-control"  placeholder="Пароль еще раз">
+      </div>
+      <button class="btn btn-primary">Зарегистрироваться</button>
+      <p class="if text-light m-2">Уже есть аккаунт? <a href="sign-in.html" class="input-link">Войти</a></p>
+    </form>
   </div>
   
 
