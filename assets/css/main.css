@@ -70,46 +70,8 @@ img {
     text-decoration: underline;
   }
 
-  ul.social-icons {
-    list-style: none;
-    margin-bottom: 0;
-    padding: 0;
-  }
-
-  ul.social-icons li {
-    margin-right: 10px;
-  }
-
-  ul.social-icons a {
-    background-color: var(--accent-color);
-    color: var(--contrast-color);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    float: left;
-    text-align: center;
-    line-height: 30px;
-    transition: all 0.3s;
-  }
-
-  ul.social-icons a:hover {
-    background-color: var(--contrast-color);
-    color: var(--accent-color);
-  }
-
   .header-top .btn {
     background-color: #fff;
-  }
-
-  .header-logo {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--accent-color);
-    transition: all 0.3s;
-  }
-
-  .header-logo:hover {
-    color: var(--contrast-color);
   }
 
   .btn-warning {
@@ -140,13 +102,13 @@ img {
   .nav-link:hover {
     color: var(--accent-color) !important;
   }
-
-  /* Carousel */
-  .carousel-item {
-    height: 500px;
-    width: 100%;
-  }
 /* =================================== Header ===================================  */
+
+/* =================================== Main ===================================  */
+/* =================================== Carousel ===================================  */
+
+
+
 
 /* Footer */
 
