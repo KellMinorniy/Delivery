@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/support.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header w-100">
+      <div class="header-top py-1">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-6 col-sm-4">
+              <div class="header-top-phone d-flex align-items-center h-100">
+                <i class="fa-solid fa-phone"></i>
+                <a href="tel:+79782684614" class="ms-2">8(952) 025-46-48</a>
+              </div>
+            </div>
+            <div class="col-sm-4 d-none d-sm-block">
+              <ul class="logo d-flex justify-content-center">
+                <img src="/Store_Shabl/assets/img/Scotch social pub(5).png" alt="">
+              </ul>
+            </div>
+            <div class="col-6 col-sm-4">
+              <div class="header-top-account d-flex justify-content-end">
+                <div class="btn-group me-2">
+                  <div class="dropdown">
+                    <a class="btn btn-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Профиль
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="sign-in.html">Войди</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="sign-up.html">Зарегистрироваться</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="btn-group">
+                  <div class="dropdown">
+                    <a class="btn btn-sm dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false">
+                      Светлая
+                    </a>
+
+                    <ul class="dropdown-menu">
+                      <li>
+                        <a class="dropdown-item" href="#">Темная</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="#">Светлая</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <!-- Header-top -->
+
+      <div class="header-middle bg-white py-4">
+        <div class="container-fluid bg-">
+          <div class="row align-items-center">
+            <div class="col-md-4">
+              <a href="/index.html" class="header-logo"><img src="/Store_Shabl/assets/img/Scotch social pub(5).png" alt="" class="logo"></a>
+            </div>
+
+            <div class="col-md-4">
+              <form action="">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search..." aria-label="Search..." aria-describedby="button-search">
+                  <button class="btn btn-outline-warning" type="submit" id="button-search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            
+            <div class="col-md-4 cart-buttons text-end">
+              <a href="/feedback.html" class="btn">
+                <i class="fa-solid fa-heart"></i>
+                <span class="badge text-bg-warning cart-badge bg-warning">5</span>
+              </a>
+
+              <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart" aria-controls="offcanvasCart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="badge text-bg-warning cart-badge bg-warning">3</span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart" aria-labelledby="offcanvasCartLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasCartLabel">Корзина</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div>
+                    Здесь вы можете смотреть товары, которые добавили в корзину
+                  </div>
+                  <div class="dropdown mt-3">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                      Товары
+                    </button>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Товар 1</a></li>
+                      <li><a class="dropdown-item" href="#">Товар 2</a></li>
+                      <li><a class="dropdown-item" href="#">Товар 3</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Header-middle -->
+
+      <!-- Header-low -->
+    </header>
+    <div class="header-bottom sticky-top">
+      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcancasNavbar" aria-controls="#offcancasNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start w-50"  id="offcancasNavbar" tabindex="-1"  aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-body">
+
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">Главная</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/menu.html">Меню доставки</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/about.html">О нас</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/support.html">Поддержка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/replenish.html">Оплата</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
+                  Бронь столов
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Адрес 1</a></li>
+                  <li><a class="dropdown-item" href="#">Адрес 2</a></li>
+
+                  <li class="nav-item dropend">
+                    <a class="dropdown-item dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                      Доставка
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                      <li>
+                        <a href="#" class="dropdown-item">Заказать</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item">Подробнее</a>
+                      </li>
+                      <li>
+                        <a href="#" class="dropdown-item"></a>
+                      </li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+            </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <main class="main">
+        <div class="container justify-content-center mt-4 mb-3">
+            <h1>Отправить сообщение в поддержку</h1>
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Имя</label>
+                <input type="text" class="form-control" id="name" placeholder="Введите ваше имя" required>
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">Номер</label>
+                <input type="tel" class="form-control" id="email" placeholder="Введите ваш номер телефона" required>
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label">Сообщение</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Введите ваше сообщение" required></textarea>
+              </div>
+              <button type="submit" class="button-form btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </main>
+
+    <!-- End Content -->
+    <footer class="footer bg-dark p-1">
+      <hr>
+      <div class="end d-flex col-md-12 justify-content-around">
+        <div class="company d-flex flex-row">
+          <p class="name text-light">©Scotch social lounge bar <span class="text-secondary">2023</span> </p>
+        </div>
+
+        <div class="company-contact">
+          <a href="https://www.instagram.com/scotch.21/" class="footer-link active p-1"><i class="fa-brands fa-instagram text-light"></i></a>
+          <a href="https://vk.com/scotch21" class="footer-link active"><i class="fa-brands fa-vk text-light"></i></a>
+        </div>        
+      </div>
+    </footer>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+
+</html>
