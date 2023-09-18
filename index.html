@@ -5,29 +5,30 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/header&footer/header.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="wrapper bg-dark">
     <header class="header w-100">
       <div class="header-top py-1">
         <div class="container-fluid">
           <div class="row">
             <div class="col-6 col-sm-4">
-              <div class="header-top-phone d-flex align-items-center h-100">
+              <div class="header-top-phone d-flex align-items-center h-100 text-light">
                 <i class="fa-solid fa-phone"></i>
-                <a href="tel:+79782684614" class="ms-2">8(952) 025-46-48</a>
+                <a href="tel:+8952-025-46-48" class="ms-2 text-light">8(952) 025-46-48</a>
               </div>
             </div>
             <div class="col-sm-4 d-none d-sm-block">
               <ul class="logo d-flex justify-content-center">
-                <img src="/Store_Shabl/assets/img/Scotch social pub(5).png" alt="">
+                <img src="" alt="">
               </ul>
             </div>
             <div class="col-6 col-sm-4">
@@ -41,7 +42,7 @@
 
                     <ul class="dropdown-menu">
                       <li>
-                        <a class="dropdown-item" href="sign-in.html">Войди</a>
+                        <a class="dropdown-item" href="sign-in.html">Войти</a>
                       </li>
                       <li>
                         <a class="dropdown-item" href="sign-up.html">Зарегистрироваться</a>
@@ -77,7 +78,7 @@
       </div>
       <!-- Header-top -->
 
-      <div class="header-middle bg-white py-4">
+      <div class="header-middle bg-dark py-4">
         <div class="container-fluid bg-">
           <div class="row align-items-center">
             <div class="col-md-4">
@@ -86,37 +87,29 @@
             </div>
 
             <div class="col-md-4">
-              <form action="">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Search..." aria-label="Search..."
-                    aria-describedby="button-search">
-                  <button class="btn btn-outline-warning" type="submit" id="button-search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                  </button>
-                </div>
-              </form>
+              <img src="/assets/img/Scotch social pub(5).png" alt="">
             </div>
 
 
             <div class="col-md-4 cart-buttons text-end">
-              <a title="Отзывы" href="/feedback.html" class="btn">
+              <a title="Отзывы" href="/feedback.html" class="btn text-light">
                 <i class="fa-solid fa-heart"></i>
                 <span class="badge text-bg-warning cart-badge bg-warning">5</span>
               </a>
 
-              <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
+              <button class="btn text-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasCart"
                 aria-controls="offcanvasCart">
                 <i class="fa-solid fa-cart-shopping" title="Корзина"></i>
                 <span class="badge text-bg-warning cart-badge bg-warning">3</span>
               </button>
               <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasCart"
                 aria-labelledby="offcanvasCartLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasCartLabel">Корзина</h5>
+                <div class="offcanvas-header bg-dark">
+                  <h5 class="offcanvas-title text-light" id="offcanvasCartLabel">Корзина</h5>
                   <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                 </div>
-                <div class="offcanvas-body">
-                  <div>
+                <div class="offcanvas-body bg-dark" data-bs-theme="dark">
+                  <div class="text-light">
                     Здесь вы можете смотреть товары, которые добавили в корзину
                   </div>
                   <div class="dropdown mt-3">
@@ -203,11 +196,23 @@
       </nav>
     </div>
     <main class="main">
-      <div class="h-100">
-        <div class="h5"></div>
+      <div class="container mt-4 mb-4">
+        <div class="row">
+          <div class="col-md-6 position-relative d-flex align-items-center justify-content-center">
+            <img src="/assets/img/Rectangle 1.png" alt="" class="img-fluid">
+            <a href="#" class="main-link position-absolute top-50 start-50 translate-middle">Заказать доставку</a>
+          </div>
+          <div class="col-md-6 position-relative d-flex align-items-center justify-content-center">
+            <img src="/assets/img/Rectangle 2.png" alt="" class="img-fluid">
+            <a href="#" class="main-link position-absolute top-50 start-50 translate-middle">Забронировать стол                                          </a>
+          </div>
+        </div>
       </div>
     </main>
-
+    
+    
+    
+    
     <!-- End Content -->
     <footer class="footer bg-dark p-1">
       <hr>
