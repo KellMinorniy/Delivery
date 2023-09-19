@@ -24,7 +24,8 @@ body {
 .wrapper {
   min-height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: column;  
+  background-color: black;
 }
 
 main.main {
@@ -58,7 +59,14 @@ img {
 /* =================================== general ===================================  */
 
 /* =================================== Header ===================================  */
+  .header-middle {
+    background-color: black;
+  }
 
+  .icons {
+    font-size: x-large;
+  }
+  
   .logo {
     width: 15%;
   }
@@ -98,6 +106,7 @@ img {
   .header-bottom {
     border-top: var(--accent-color)  solid 3px;
     box-shadow: 5px 5px 5px 5px;
+    background-color: black;
   }
 
   .nav-link:hover {
@@ -110,4 +119,15 @@ img {
 
 .footer-logo {
   width: 5%;
+}
+
+footer {
+  background-color: black;
+}
+
+
+@media(max-width:990px){
+  .icon {
+    display: none;
+  }
 }
